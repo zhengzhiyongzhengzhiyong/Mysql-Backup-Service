@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JllObpQQnhdtlcQTriYnDhY1TvmUlqXxPYELpB2Jdg4=</dsig:DigestValue>
+        <dsig:DigestValue>YWV0kvLEc3xUgNXEUzzPRFyFnLOov9dBiDIs6fTO3V4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,24 +78,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="worker.exe" size="8128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="worker.exe" size="7168">
       <assemblyIdentity name="worker" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2T2vWgftnBGdwDR/uA1arxyOF8VnkrOOQzSlX62aRLo=</dsig:DigestValue>
+        <dsig:DigestValue>yjUazPG5jTp4cvj1aiX9hUlPN6ATJCCmyOAlymD7oV8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="worker.exe.config" size="1502">
+  <file name="worker.exe.config" size="1500">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>tP+1kMdOXFI+TVDvrSAJ9Fd0vMiWM+4QSimrRwGo2dw=</dsig:DigestValue>
+      <dsig:DigestValue>NUf7A7sDBw/c99YZPVdhNCmBnGYV27SDS505TfV2QQs=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
