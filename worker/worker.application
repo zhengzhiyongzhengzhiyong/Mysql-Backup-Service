@@ -7,14 +7,14 @@
     <framework targetVersion="4.6.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="worker.exe.manifest" size="4125">
+    <dependentAssembly dependencyType="install" codebase="worker.exe.manifest" size="5439">
       <assemblyIdentity name="worker.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BJd8pYCkruBIFxveoCP1tQZXq3tT4YT47rA4XjlV1k8=</dsig:DigestValue>
+        <dsig:DigestValue>xQm89FV/1LJ8ovm9xpqk5g6dQTxmt++N+EJB0U3AqZE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -2,43 +2,46 @@
 using System.Threading;
 using System.Configuration;
 using FluentScheduler;
+using Helper;
 
 class Program
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static bool running;
 
-    public static void Log(string s)
-    {
-        Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] {s}");
-    }
+
 
     public static void Loop()
     {
-        Log("Started SampleWorker(c# version)");
+        Loger.Log("Started");
 
-        //JobManager.Initialize(new Taskfactory());
-        //while (running)
-        //{
-        //    Log("Running");
-        //    var url = ConfigurationManager.AppSettings["UrlToPing"].ToString();
-        //    Log(url);
-        //    Thread.Sleep(2000);
-        //}
-        Log("Stopped SampleWorker(c# version)");
+        var taskfactory = new Taskfactory();
+
+        JobManager.Initialize(taskfactory);
+        
+        while (running)
+        {
+            //Log("Running");
+            Thread.Sleep(2000);
+        }
+
+        Loger.Log("Stopped");
     }
 
     public static void Main()
     {
-        //var th = new Thread(Loop);
+        var th = new Thread(Loop);
 
-        //running = true;
-        //th.Start();
+        running = true;
+        th.Start();
 
-        var msg
-            = Console.ReadLine();
-        Log($"Received message \"{msg}\" from the Monitor");
+        //var msg= Console.ReadLine();
+        //Log($"Received message \"{msg}\" from the Monitor");
 
         //running = false;
-        //th.Join();
+        th.Join();
+        
     }
 }
