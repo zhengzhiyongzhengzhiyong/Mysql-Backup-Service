@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConvertHelper.cs" />
+    <Compile Include="exeHelper.cs" />
     <Compile Include="Loger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

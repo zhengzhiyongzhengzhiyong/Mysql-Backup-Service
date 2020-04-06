@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Helper.dll" size="7680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Helper.dll" size="8704">
       <assemblyIdentity name="Helper" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YWV0kvLEc3xUgNXEUzzPRFyFnLOov9dBiDIs6fTO3V4=</dsig:DigestValue>
+        <dsig:DigestValue>2CrXXhmncqBuQzzyg2LrlmJgoFI2PMisGjTb6GPJqbE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,24 +78,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="worker.exe" size="7168">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="worker.exe" size="7680">
       <assemblyIdentity name="worker" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yjUazPG5jTp4cvj1aiX9hUlPN6ATJCCmyOAlymD7oV8=</dsig:DigestValue>
+        <dsig:DigestValue>BK5g4mhGEpLVf/lx+iZdZU6zHOWwrg/GlPfX5lR/ER8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="worker.exe.config" size="1500">
+  <file name="worker.exe.config" size="1504">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>NUf7A7sDBw/c99YZPVdhNCmBnGYV27SDS505TfV2QQs=</dsig:DigestValue>
+      <dsig:DigestValue>/NHjl2o1mR83p95wPbIxMe7uNoYWMfhhbuJtjMogTkY=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
