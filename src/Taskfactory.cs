@@ -14,8 +14,41 @@ public class Taskfactory : Registry
     public static int IncreasebackupTimer = ConfigurationManager.AppSettings["increaseBackup"].ToInt_V();
     public Taskfactory()
     {
-        Schedule<AllBackup>().ToRunNow().AndEvery(10).Minutes();
-        Schedule<IncreaseBackup>().ToRunNow().AndEvery(10).Minutes();
+        switch (AllbackupTimer)
+        {
+            case 0:
+                Schedule<AllBackup>().ToRunNow().AndEvery(1).Days().At(3,0);
+                break;
+            case 1:
+                Schedule<AllBackup>().ToRunNow().AndEvery(1).Months().OnTheFirst(DayOfWeek.Monday).At(3, 0);
+                break;
+            case 2:
+                Schedule<AllBackup>().ToRunNow().AndEvery(1).Months().OnTheFirst(DayOfWeek.Tuesday).At(3, 0);
+                break;
+            case 3:
+                Schedule<AllBackup>().ToRunNow().AndEvery(1).Months().OnTheFirst(DayOfWeek.Wednesday).At(3, 0);
+                break;
+            case 4:
+                Schedule<AllBackup>().ToRunNow().AndEvery(1).Months().OnTheFirst(DayOfWeek.Wednesday).At(3, 0);
+                break;
+            case 5:
+                Schedule<AllBackup>().ToRunNow().AndEvery(1).Months().OnTheFirst(DayOfWeek.Friday).At(3, 0);
+                break;
+            case 6:
+                Schedule<AllBackup>().ToRunNow().AndEvery(1).Months().OnTheFirst(DayOfWeek.Saturday).At(3, 0);
+                break;
+            case 7:
+                Schedule<AllBackup>().ToRunNow().AndEvery(1).Months().OnTheFirst(DayOfWeek.Sunday).At(3, 0);
+                break;
+        }
+        if (IncreasebackupTimer > 5)
+        { 
+            Schedule<IncreaseBackup>().ToRunNow().AndEvery(IncreasebackupTimer).Minutes(); 
+        }
+        else
+        {
+            Schedule<IncreaseBackup>().ToRunNow().AndEvery(5).Minutes();
+        }
     }
 }
 

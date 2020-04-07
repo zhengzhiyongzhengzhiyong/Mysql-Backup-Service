@@ -39,7 +39,7 @@ public class AllBackup : IJob
 
             DateTime date = DateTime.Now;
 
-            string dailypath = $"{date.Year}-{date.Month}-{date.Day}-{date.Hour}";
+            string dailypath = $"{date.Year}-{date.Month}-{date.Day}";
 
             string allBackupPath = Path.Combine(BackupDir, dailypath);
 
